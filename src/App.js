@@ -9,9 +9,9 @@ import Suggestion from './Container/Suggestion'
 function App() {
 
   return (
-    <div className='m-5' >
+    <div className='page-container m-5 min-h-full relative'>
       <Header />
-      <div className='grid grid-cols-12 h-3/5'>
+      <div className='grid grid-cols-12 h-4/6'>
         <SideTab />
         <Content />
         <Suggestion />
