@@ -1,21 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Header from './Container/Header'
 import Footer from './Container/Footer'
-import SideTab from './Container/SideTab'
-import Content from './Container/Content'
-import Suggestion from './Container/Suggestion'
+import Home from './Home';
+import Blog from './Blog';
 
 function App() {
-
   return (
     <div className='page-container m-5 min-h-full relative'>
       <Header />
-      <div className='grid grid-cols-12 h-4/6'>
-        <SideTab />
-        <Content />
-        <Suggestion />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );
