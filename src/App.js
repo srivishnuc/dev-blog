@@ -5,21 +5,25 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Header from './Container/Header'
 import Footer from './Container/Footer'
-import Home from './Home';
-import Blog from './Blog';
+import Content from './Container/Content';
+import ContentList from './Components/Content/ContentList';
+import ContentView from './Components/Content/ContentView';
 
 function App() {
   return (
-    <div className='page-container m-5 min-h-full relative'>
-      <Header />
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className='page-container m-5 min-h-full relative'>
+        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/" element={<Content />} />
+          <Route path="/blog" element={<Content />}>
+            <Route path="list" element={<ContentList />} />
+            <Route path="view" element={<ContentView />} />
+          </Route>
         </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

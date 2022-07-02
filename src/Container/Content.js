@@ -1,6 +1,4 @@
 import React from 'react'
-import ContentView from '../Components/Content/ContentView'
-import ContentList from '../Components/Content/ContentList'
 
 function Content() {
     return (
