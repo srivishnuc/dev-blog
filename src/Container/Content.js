@@ -1,9 +1,12 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom';
+
+
 
 function Content() {
     return (
-        <div className='col-span-8'>
-            <h1 className='text-3xl font-bold underline'>Content</h1>
+        <div className='grid grid-cols-4 h-4/6'>
+            <Outlet />
         </div>
     )
 }
