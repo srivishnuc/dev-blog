@@ -1,3 +1,4 @@
+const { red } = require('tailwindcss/colors')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -7,7 +8,8 @@ module.exports = {
     theme: {
         colors: {
             primary: '#34d399',
-            secondary: '#f1f5f9',
+            secondary: '#e2e8f0',
+            error: '#ef4444',
         }
     },
     plugins: [],
