@@ -14,13 +14,13 @@ import NoMatch from './NoMatch';
 function App() {
   return (
     <BrowserRouter>
-      <div className='page-container m-5'>
+      <div className='page-container'>
         <Header />
         <Routes>
           <Route path="/" element={<Navigate to="/signup" replace />} />
           <Route path="" element={<Content />}>
-            <Route default path="/singup" element={<SignUp />} />
-            <Route path="/singin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
             <Route path="/blog" element={<ContentList />} />
             <Route path="/blog/:blogid" element={<ContentView />} />
           </Route>
