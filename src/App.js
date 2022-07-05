@@ -18,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Navigate to="/signup" replace />} />
+
           <Route path="" element={<Content />}>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
