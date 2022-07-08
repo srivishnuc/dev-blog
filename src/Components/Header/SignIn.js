@@ -18,7 +18,7 @@ function SignIn() {
                     <p className="text-error text-xs italic">Please enter the password.</p>
                 </div>
                 <div className="flex items-center justify-between">
-                    <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    <button className="bg-primary text-secondary hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                         Sign In
                     </button>
                     <a className="inline-block align-baseline text-sm text-primary" href="#">
@@ -27,7 +27,7 @@ function SignIn() {
                 </div>
                 <div className="flex flex-col items-center justify-between gap-4">
                     <i>or</i>
-                    <button className="bg-secondary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                    <button className="bg-secondary text-primary hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                         Login as Guest
                     </button>
                 </div>

@@ -47,7 +47,7 @@ function SignUp() {
 
                     </div>
                     <div className="flex items-center justify-end">
-                        <button className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                        <button className="bg-primary text-secondary hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                             Sign Up
                         </button>
                     </div>
